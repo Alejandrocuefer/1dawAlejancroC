@@ -21,4 +21,19 @@ public class Bombo {
     int numeroAleatorio = 0;
     int numeroSacado = 0;
     int longitud = 90;
+    
+    //Contructor del bombo, genera un array para rellenar las bolas
+    public Bombo() {
+        array = new ArrayList<>();
+        rellenarBolas();
+    }
+    
+    //Getter y setter
+    public ArrayList<Integer> getArray() {
+        return array;
+    }
+
+    public void setArray(ArrayList<Integer> array) {
+        this.array = array;
+    }
 }
