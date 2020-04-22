@@ -10,5 +10,6 @@ package com.mycompany.dawalejancroc;
  * @author Alex
  */
 public class Carton {
-    
+    //Creamos el array del Carton, las dimensiones son 3x9
+    int[][] cartones = new int[3][9];
 }
