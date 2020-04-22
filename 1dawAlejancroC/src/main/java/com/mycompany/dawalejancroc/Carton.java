@@ -159,4 +159,16 @@ public class Carton {
             System.out.println("");
         }
     }
+    
+    //Metodo para tachar la casilla según el número que contenga, que se lo
+    //pasaremos por parametro.
+    public void tacharCasilla(int num) {
+        for (int i = 0; i < cartones.length; i++) {
+            for (int j = 0; j < cartones[i].length; j++) {
+                if (cartones[i][j] == num) {
+                    cartones[i][j] = 0;
+                }
+            }
+        }
+    }
 }
