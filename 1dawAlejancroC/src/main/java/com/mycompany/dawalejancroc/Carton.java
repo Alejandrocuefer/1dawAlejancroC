@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class Carton {
     //Creamos el array del Carton, las dimensiones son 3x9
-    int[][] cartones = new int[3][9];
+    private int[][] cartones = new int[3][9];
     
     //Creamos un metodo que nos genere el numero que vamos a poner en las casillas
     //Este numero tiene que ser aleatorio y debe cumplir la condicion que vaya en
@@ -209,5 +209,13 @@ public class Carton {
         } else {
             System.out.println("no comprobao");
         }
+    }
+
+    public int[][] getCartones() {
+        return cartones;
+    }
+
+    public void setCartones(int[][] cartones) {
+        this.cartones = cartones;
     }
 }
