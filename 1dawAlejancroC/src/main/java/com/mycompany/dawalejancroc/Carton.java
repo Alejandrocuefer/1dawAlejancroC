@@ -132,4 +132,20 @@ public class Carton {
 //            Arrays.sort(cartones[i]);
         }
     }
+    
+    //Metodo que comprueba que el numero no está repetido
+    static boolean comprobarNumero(int carton[][], int num, int nCarton) {
+
+        //Tenemos un booleano que será el que marcará si está o no repetido el numero
+        boolean repetido = false;
+
+        // En el bucle vamos probando que el numero que nos han mandado a la funcion
+        // esté repetido en el array, y si lo está marca como verdadero el booleano.
+        for (int i = 0; i < carton[nCarton].length; i++) {
+            if (num == carton[nCarton][i]) {
+                repetido = true;
+            }
+        }
+        return repetido;
+    }
 }
