@@ -191,4 +191,23 @@ public class Carton {
         }
 
     }
+    
+    //Metodo para comprobar si tenemos todo el carton sin numeros, esto lo compruebo
+    //del mismo modo que comprobarLinea, pero a diferencia que esto lo haremos si
+    //toda la matriz nos da 0
+    public void comprobarBingo() {
+        int num = 0;
+        for (int i = 0; i < 3; i++) {
+
+            for (int j = 0; j < 9; j++) {
+                num += cartones[i][j];
+
+            }
+        }
+        if (num == 0) {
+            System.out.println("Comprobao");
+        } else {
+            System.out.println("no comprobao");
+        }
+    }
 }
