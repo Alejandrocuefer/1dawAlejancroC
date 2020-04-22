@@ -171,4 +171,24 @@ public class Carton {
             }
         }
     }
+    
+    //Metodo para comprobar si la linea está tachada entera, en nuestra logica del
+    //programa esto se comprueba si la linea tiene todo 0, por lo que la suma de 
+    //toda la fila debe ser 0 si está tachada.
+    public void comprobarLinea() {
+        int num = 0;
+        for (int i = 0; i < 3; i++) {
+
+            for (int j = 0; j < 9; j++) {
+                num += cartones[i][j];
+
+            }
+            if (num == 0) {
+                System.out.println("Comprobao");
+            } else {
+                System.out.println("no comprobao");
+            }
+        }
+
+    }
 }
