@@ -23,76 +23,107 @@ public class Carton {
     private int generarNumero(int i, int j) {
     
         Random r = new Random();
+        int numGenerado = 0;
         switch (i) {
             case 0:
                 switch (j) {
                     //Las filas devolverán valores que estén entre los 3 primeros
                     //valores de la fila, en la primera 1-3, en la segunda 10-13...
                     case 0:
-                        return this.cartones[i][j] = r.nextInt(3) + 1;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 1;
+                        break;
                     case 1:
-                        return this.cartones[i][j] = r.nextInt(3) + 10;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 10;
+                        break;
                     case 2:
-                        return this.cartones[i][j] = r.nextInt(3) + 20;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 20;
+                        break;
                     case 3:
-                        return this.cartones[i][j] = r.nextInt(3) + 30;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 30;
+                        break;
                     case 4:
-                        return this.cartones[i][j] = r.nextInt(3) + 40;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 40;
+                        break;
                     case 5:
-                        return this.cartones[i][j] = r.nextInt(3) + 50;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 50;
+                        break;
                     case 6:
-                        return this.cartones[i][j] = r.nextInt(3) + 60;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 60;
+                        break;
                     case 7:
-                        return this.cartones[i][j] = r.nextInt(3) + 70;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 70;
+                        break;
                     case 8:
-                        return this.cartones[i][j] = r.nextInt(3) + 80;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 80;
+                        break;
                 }
+                return numGenerado;
             case 1:
                 switch (j) {
-                    //La segunda fila haremos lo mismo pero entre 4 y 6
+                    //La segunda fila haremos lo mismo pero entre 4 y 7
                     case 0:
-                        return this.cartones[i][j] = r.nextInt(3) + 4;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 4;
+                        break;
                     case 1:
-                        return this.cartones[i][j] = r.nextInt(3) + 14;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 14;
+                        break;
                     case 2:
-                        return this.cartones[i][j] = r.nextInt(3) + 24;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 24;
+                        break;
                     case 3:
-                        return this.cartones[i][j] = r.nextInt(3) + 34;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 34;
+                        break;
                     case 4:
-                        return this.cartones[i][j] = r.nextInt(3) + 44;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 44;
+                        break;
                     case 5:
-                        return this.cartones[i][j] = r.nextInt(3) + 54;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 54;
+                        break;
                     case 6:
-                        return this.cartones[i][j] = r.nextInt(3) + 64;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 64;
+                        break;
                     case 7:
-                        return this.cartones[i][j] = r.nextInt(3) + 74;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 74;
+                        break;
                     case 8:
-                        return this.cartones[i][j] = r.nextInt(3) + 84;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 84;
+                        break;
                 }
+                return numGenerado;
 
             case 2:
                 switch (j) {
-                    //Y la tercera será entre 7 y 9
+                    //Y la tercera será entre 8 y 9
                     case 0:
-                        return this.cartones[i][j] = r.nextInt(3) + 7;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 8;
+                        break;
                     case 1:
-                        return this.cartones[i][j] = r.nextInt(3) + 17;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 18;
+                        break;
                     case 2:
-                        return this.cartones[i][j] = r.nextInt(3) + 27;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 28;
+                        break;
                     case 3:
-                        return this.cartones[i][j] = r.nextInt(3) + 37;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 38;
+                        break;
                     case 4:
-                        return this.cartones[i][j] = r.nextInt(3) + 47;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 48;
+                        break;
                     case 5:
-                        return this.cartones[i][j] = r.nextInt(3) + 57;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 58;
+                        break;
                     case 6:
-                        return this.cartones[i][j] = r.nextInt(3) + 67;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 68;
+                        break;
                     case 7:
-                        return this.cartones[i][j] = r.nextInt(3) + 77;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 78;
+                        break;
                     case 8:
-                        return this.cartones[i][j] = r.nextInt(3) + 87;
+                        numGenerado = this.cartones[i][j] = r.nextInt(3) + 88;
+                        break;
 
                 }
+                return numGenerado;
 
         }
         //Para asegurar que no haya ninguna casilla a null, si por algún casual

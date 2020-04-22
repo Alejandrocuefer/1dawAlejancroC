@@ -59,11 +59,7 @@ public class JuegoBingo {
 
         } catch (Exception e) {
         }
-        
-        ////////////////////////////////////////////
-        /////////////////JUEGO/////////////////////
-        //////////////////////////////////////////
-        
+
         System.out.println("-----------------------");
         System.out.println("----Juego del bingo----");
         System.out.println("-----------------------");
