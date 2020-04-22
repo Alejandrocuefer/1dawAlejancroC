@@ -59,5 +59,38 @@ public class JuegoBingo {
 
         } catch (Exception e) {
         }
+        
+        ////////////////////////////////////////////
+        /////////////////JUEGO/////////////////////
+        //////////////////////////////////////////
+        
+        System.out.println("-----------------------");
+        System.out.println("----Juego del bingo----");
+        System.out.println("-----------------------");
+
+        System.out.println("Generando un carton...");
+        System.out.println("-----------------------");
+        carton.rellenarCarton();
+        carton.mostarCarton();
+        System.out.println("-----------------------");
+
+        int opcion = 0;
+
+        do {
+            System.out.println("¿Quieres sacar bola?");
+            System.out.println("1. Si");
+            System.out.println("2. No");
+            opcion = teclado.nextInt();
+            System.out.println("Has sacado la bola " + bombo.sacarBola());
+            carton.tacharCasilla(bombo.sacarBola());
+            carton.mostarCarton();
+        } while (opcion == 1);
+
+        System.out.println("Comprobemos si has sacado alguna linea");
+        carton.comprobarLinea();
+        System.out.println("Comprobemos si has hecho bingo");
+        carton.comprobarBingo();
+
+        carton.mostarCarton();
     }
 }
