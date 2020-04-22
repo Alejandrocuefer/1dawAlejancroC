@@ -99,4 +99,37 @@ public class Carton {
         //falla, tendremos  esto para dejarla a 0
         return 0;  
     }
+    
+    //Metodo para rellenar el carton de numeros, en este metodo tenemos que controlar
+    //que los numeros no se repitan, asi que hemos creado un metodo auxiliar llamado
+    //comprobarNumero(); que nos ayudará en eso.
+    public void rellenarCarton() {
+
+        int num = 0;
+
+        //Tenemos un booleano que nos marcará, a través de la funcion 
+        //comprobarNumero, si está o no repetido, el numero.
+        boolean check = false;
+
+        
+        //Recorremos el array dandole a la variable num un valor aleatorio y
+        //probamos con comprobarNumero si está o no repetido el numero en el
+        //array
+        
+        for (int i = 0; i < cartones.length; i++) {
+
+            for (int j = 0; j < cartones[i].length; j++) {
+
+                do {
+                    num = generarNumero(i, j);
+                    if (check) {
+                        check = comprobarNumero(cartones, num, i);
+                    }
+                } while (check);
+                cartones[i][j] = num;
+
+            }
+//            Arrays.sort(cartones[i]);
+        }
+    }
 }
