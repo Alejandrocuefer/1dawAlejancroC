@@ -55,4 +55,15 @@ public class Bombo {
         }
         
     }
+    
+    // Sacamos una bola aleatoria del bombo, este metodo a parte de sacarla
+    // tambien tiene que restar al bombo esa bola
+    public int sacarBola() {
+        int numSacado;
+        Random r = new Random();
+        numSacado=array.get(r.nextInt(longitud)+1);
+        longitud--;
+        return numSacado;
+        
+    }
 }
