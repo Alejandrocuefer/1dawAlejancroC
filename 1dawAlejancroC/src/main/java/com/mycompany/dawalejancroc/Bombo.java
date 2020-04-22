@@ -46,4 +46,13 @@ public class Bombo {
             return false;
         }
     }
+    
+    //Metodo que rellena 90 bolas al array de 1 en 1
+    private void rellenarBolas() {
+        
+        for (int i = 0; i < 90; i++) {
+            array.add(i+1);
+        }
+        
+    }
 }
