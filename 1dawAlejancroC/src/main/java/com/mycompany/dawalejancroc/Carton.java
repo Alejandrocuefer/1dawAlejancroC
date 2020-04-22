@@ -148,4 +148,15 @@ public class Carton {
         }
         return repetido;
     }
+    
+    //Un bucle for each que nos muestra el cartón
+    public void mostarCarton() {
+
+        for (int[] aux : cartones) {
+            for (int aux2 : aux) {
+                System.out.print(aux2 + " \t");
+            }
+            System.out.println("");
+        }
+    }
 }
