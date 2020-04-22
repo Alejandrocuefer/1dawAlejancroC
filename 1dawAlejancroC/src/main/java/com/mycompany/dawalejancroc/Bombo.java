@@ -36,4 +36,14 @@ public class Bombo {
     public void setArray(ArrayList<Integer> array) {
         this.array = array;
     }
+    
+    //Con este metodo comprobamos si el bombo está vacío, para ello usamos
+    //la funcion de ArrayList .isEmpty y con esto devolveremos un boolean
+    public boolean estaVacia() {
+        if (array.isEmpty()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
