@@ -184,9 +184,9 @@ public class Carton {
 
             }
             if (num == 0) {
-                System.out.println("Comprobao");
+                System.out.println("¡Perfecto, has tachado una linea entera!");
             } else {
-                System.out.println("no comprobao");
+                System.out.println("aún te faltan casillas por tachar");
             }
         }
 
@@ -205,9 +205,9 @@ public class Carton {
             }
         }
         if (num == 0) {
-            System.out.println("Comprobao");
+            System.out.println("Has hecho bingo, ¡enhorabuena!");
         } else {
-            System.out.println("no comprobao");
+            System.out.println("aún te faltan casillas por tachar");
         }
     }
 
