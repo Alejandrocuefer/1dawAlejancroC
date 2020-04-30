@@ -61,9 +61,8 @@ public class Bombo {
     public int sacarBola() {
         int numSacado;
         Random r = new Random();
-        numSacado=array.get(r.nextInt(longitud)+1);
-        longitud--;
+        numSacado=array.get(r.nextInt(array.size()));
+        array.remove(r);
         return numSacado;
-        
     }
 }
