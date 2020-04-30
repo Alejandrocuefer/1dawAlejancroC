@@ -59,7 +59,7 @@ public class JuegoBingo {
 
         } catch (Exception e) {
         }
-
+        System.out.println("----------------------------------------------");
         System.out.println("-----------------------");
         System.out.println("----Juego del bingo----");
         System.out.println("-----------------------");
@@ -77,8 +77,9 @@ public class JuegoBingo {
             System.out.println("1. Si");
             System.out.println("2. No");
             opcion = teclado.nextInt();
-            System.out.println("Has sacado la bola " + bombo.sacarBola());
-            carton.tacharCasilla(bombo.sacarBola());
+            int numero = bombo.sacarBola();
+            System.out.println("Has sacado la bola " + numero);
+            carton.tacharCasilla(numero);
             carton.mostarCarton();
         } while (opcion == 1);
 
